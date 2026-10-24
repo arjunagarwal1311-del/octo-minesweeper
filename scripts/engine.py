@@ -41,7 +41,7 @@ def render_readme(game, repository):
     lines.append("### 🗺️ Dynamic Battleground (Click tile to Conquer)")
     lines.append("<sub>Click any tile to submit your move via GitHub Issues:</sub>\n")
 
-    # Base raw asset URL so GitHub always finds the SVG tiles
+    # Absolute raw URL base prevents path 404s inside GitHub Markdown tables
     raw_asset_base = f"https://raw.githubusercontent.com/{repository}/main/assets/tiles"
 
     lines.append('<table border="0" cellspacing="0" cellpadding="0">')
@@ -62,7 +62,7 @@ def render_readme(game, repository):
                 else:
                     val = cell.get("neighbor_mines", 0)
                     color = cell.get("owner_color")
-                    tile_name = f"{color}_{val}" if color else f"num_{val}"
+                    tile_name = f"{color}_{val}" if color and os.path.exists(f"assets/tiles/{color}_{val}.svg") else f"num_{val}"
                     cell_html = f'<img src="{raw_asset_base}/{tile_name}.svg" width="32" height="32" align="top"/>'
 
             lines.append(f'    <td width="32" height="32" align="center" valign="middle">{cell_html}</td>')
@@ -79,7 +79,7 @@ def render_readme(game, repository):
 def process_move(issue_title, repository, actor=None):
     title = issue_title.strip()
     
-    if title.lower() == "reset":
+    if "reset" in title.lower():
         import scripts.init_game as init_game_module
         init_game_module.init_game()
         game = load_game()
