@@ -30,3 +30,4 @@ Click any hidden cell below to issue a move automatically:
 
 ### 📜 Recent Moves Log
 - 🎮 Game initialized! @user1's turn to move.
+- ⚠️ Ignored move from arjunagarwal1311-del: Not their turn.

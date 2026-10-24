@@ -956,6 +956,7 @@
     ]
   ],
   "log": [
-    "\ud83c\udfae Game initialized! @user1's turn to move."
+    "\ud83c\udfae Game initialized! @user1's turn to move.",
+    "\u26a0\ufe0f Ignored move from arjunagarwal1311-del: Not their turn."
   ]
 }
