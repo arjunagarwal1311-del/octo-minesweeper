@@ -1,147 +1,47 @@
-import sys
-import json
-import random
 import os
+import json
+import sys
+import random
 
-STATE_FILE = "state/game.json"
 README_FILE = "README.md"
+STATE_FILE = "state/game.json"
 
 EMOJIS = {
-    "hidden": "⬛",
-    "flagged": "🚩",
-    "mine": "💥",
-    "numbers": ["0️⃣", "1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣", "6️⃣", "7️⃣", "8️⃣"],
     "player_blocks": {
         "blue": "🟦",
         "red": "🟥",
         "green": "🟩",
-        "purple": "🟪",
-        "yellow": "🟨"
+        "purple": "🟪"
     }
 }
 
 def load_game():
-    with open(STATE_FILE, "r") as f:
+    with open(STATE_FILE, "r", encoding="utf-8") as f:
         return json.load(f)
 
-def save_game(data):
-    with open(STATE_FILE, "w") as f:
-        json.dump(data, f, indent=2)
+def save_game(game):
+    with open(STATE_FILE, "w", encoding="utf-8") as f:
+        json.dump(game, f, indent=2)
 
 def get_active_player(game):
-    active_players = [p for p in game["players"] if p["status"] == "active"]
-    if not active_players:
+    active = [p for p in game["players"] if p["status"] == "active"]
+    if not active:
         return None
-    return game["players"][game["current_player_idx"] % len(game["players"])]
-
-def advance_turn(game):
-    total = len(game["players"])
-    for _ in range(total):
-        game["current_player_idx"] = (game["current_player_idx"] + 1) % total
-        if game["players"][game["current_player_idx"]]["status"] == "active":
-            break
-
-def count_neighbors(grid, width, height, x, y):
-    mines = 0
-    for dx in [-1, 0, 1]:
-        for dy in [-1, 0, 1]:
-            if dx == 0 and dy == 0:
-                continue
-            nx, ny = x + dx, y + dy
-            if 0 <= nx < width and 0 <= ny < height:
-                if grid[ny][nx]["is_mine"]:
-                    mines += 1
-    return mines
-
-def flood_fill(game, start_x, start_y, player):
-    grid = game["grid"]
-    w, h = game["width"], game["height"]
-    queue = [(start_x, start_y)]
-    revealed_count = 0
-
-    while queue:
-        x, y = queue.pop(0)
-        cell = grid[y][x]
-
-        if cell["state"] == "revealed" or cell["is_mine"]:
-            continue
-
-        cell["state"] = "revealed"
-        cell["owner"] = player["name"]
-        cell["owner_color"] = player["color"]
-        revealed_count += 1
-        player["score"] += 1
-
-        cell["neighbor_mines"] = count_neighbors(grid, w, h, x, y)
-
-        if cell["neighbor_mines"] == 0:
-            for dx in [-1, 0, 1]:
-                for dy in [-1, 0, 1]:
-                    nx, ny = x + dx, y + dy
-                    if 0 <= nx < w and 0 <= ny < h:
-                        if grid[ny][nx]["state"] == "hidden":
-                            queue.append((nx, ny))
-
-    return revealed_count
-
-def process_move(game, action, x, y, author):
-    player = get_active_player(game)
-    if not player or (player["type"] == "human" and player["name"].lower() != f"@{author.lower()}"):
-        game["log"].append(f"⚠️ Ignored move from {author}: Not their turn.")
-        return
-
-    grid = game["grid"]
-    cell = grid[y][x]
-
-    if action == "flag":
-        if cell["state"] == "hidden":
-            cell["state"] = "flagged"
-            game["log"].append(f"🚩 {player['name']} flagged cell ({x}, {y}).")
-        elif cell["state"] == "flagged":
-            cell["state"] = "hidden"
-            game["log"].append(f"⬛ {player['name']} unflagged cell ({x}, {y}).")
-    elif action == "reveal":
-        if cell["state"] == "flagged":
-            return
-        if cell["is_mine"]:
-            cell["state"] = "revealed"
-            player["status"] = "eliminated"
-            game["log"].append(f"💥 **BOOM!** {player['name']} hit a mine at ({x}, {y}) and was **ELIMINATED**!")
-        else:
-            revealed = flood_fill(game, x, y, player)
-            game["log"].append(f"⛏️ {player['name']} revealed ({x}, {y}) and claimed {revealed} blocks!")
-
-    advance_turn(game)
-
-def run_bot_turns(game):
-    while True:
-        player = get_active_player(game)
-        if not player or player["type"] != "bot" or player["status"] != "active":
-            break
-
-        hidden_cells = []
-        for y in range(game["height"]):
-            for x in range(game["width"]):
-                if game["grid"][y][x]["state"] == "hidden":
-                    hidden_cells.append((x, y))
-
-        if not hidden_cells:
-            break
-
-        bx, by = random.choice(hidden_cells)
-        process_move(game, "reveal", bx, by, player["name"].replace("@", ""))
+    return active[game["current_player_idx"] % len(active)]
 
 def render_readme(game, repository):
     lines = []
-    lines.append(f"# 💣 Git Mine Empires: Battlegrounds\n")
-    lines.append(f"**Repository:** `{repository}` | **Mode:** $N$-Player Territory Conquest\n")
-
+    lines.append(f"# 💣 Git Minesweeper: Battlegrounds\n")
+    
     current = get_active_player(game)
     turn_str = f"Current Turn: **{current['name']}**" if current else "**GAME OVER**"
-    lines.append(f"> ⏱️ **{turn_str}**\n")
+    
+    reset_url = f"https://github.com/{repository}/issues/new?title=reset&body=Click+Submit+New+Issue+to+reset+the+game+board."
+    
+    lines.append(f"> ⏱️ **{turn_str}** | [🔄 **Reset Game Board**]({reset_url})\n")
 
     lines.append("### 🏆 Leaderboard")
-    lines.append("| Player | Type | Color | Territory Blocks | Status |")
+    lines.append("| Player | Type | Color | Territory | Status |")
     lines.append("| :--- | :--- | :--- | :--- | :--- |")
     for p in game["players"]:
         status_icon = "🟢 Active" if p["status"] == "active" else "💀 Eliminated"
@@ -150,10 +50,10 @@ def render_readme(game, repository):
     lines.append("\n")
 
     lines.append("### 🗺️ Dynamic Grid (Click tile to Reveal)")
-    lines.append("<sub>Click any hidden tile to submit your move instantly via GitHub Issues:</sub>\n")
+    lines.append("<sub>Click any tile to submit your move via GitHub Issues:</sub>\n")
 
-    # Render HTML grid using SVG image sprites
-    lines.append('<table>')
+    # Seamless HTML Grid
+    lines.append('<table border="0" cellspacing="0" cellpadding="0">')
     for y in range(game["height"]):
         lines.append('  <tr>')
         for x in range(game["width"]):
@@ -162,23 +62,21 @@ def render_readme(game, repository):
             
             if state == "hidden":
                 issue_url = f"https://github.com/{repository}/issues/new?title=move:reveal:{x}:{y}&body=Click+Submit+New+Issue+to+confirm+turn."
-                tile_img = f'<img src="assets/tiles/hidden.svg" width="34" height="34" alt="hidden"/>'
-                cell_html = f'<a href="{issue_url}">{tile_img}</a>'
+                cell_html = f'<a href="{issue_url}"><img src="assets/tiles/hidden.svg" width="30" height="30" align="top"/></a>'
             elif state == "flagged":
-                cell_html = '<img src="assets/tiles/flag.svg" width="34" height="34" alt="flag"/>'
+                cell_html = '<img src="assets/tiles/flag.svg" width="30" height="30" align="top"/>'
             elif state == "revealed":
                 if cell["is_mine"]:
-                    cell_html = '<img src="assets/tiles/mine.svg" width="34" height="34" alt="mine"/>'
+                    cell_html = '<img src="assets/tiles/mine.svg" width="30" height="30" align="top"/>'
                 else:
                     val = cell["neighbor_mines"]
                     color = cell.get("owner_color")
-                    if color and f"{color}_{val}" in os.listdir("assets/tiles") if os.path.exists("assets/tiles") else False:
-                        tile_name = f"{color}_{val}"
-                    else:
+                    tile_name = f"{color}_{val}" if color else f"num_{val}"
+                    if not os.path.exists(f"assets/tiles/{tile_name}.svg"):
                         tile_name = f"num_{val}"
-                    cell_html = f'<img src="assets/tiles/{tile_name}.svg" width="34" height="34" alt="{val}"/>'
+                    cell_html = f'<img src="assets/tiles/{tile_name}.svg" width="30" height="30" align="top"/>'
 
-            lines.append(f'    <td align="center" width="36" height="36" padding="0">{cell_html}</td>')
+            lines.append(f'    <td width="30" height="30" align="center" valign="middle">{cell_html}</td>')
         lines.append('  </tr>')
     lines.append('</table>')
 
@@ -189,22 +87,28 @@ def render_readme(game, repository):
     with open(README_FILE, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
 
-if __name__ == "__main__":
-    if len(sys.argv) < 4:
+def main():
+    if len(sys.argv) < 3:
+        print("Usage: python engine.py <issue_title> <repository>")
         sys.exit(1)
 
-    issue_title = sys.argv[1]
-    author = sys.argv[2]
-    repository = sys.argv[3]
+    issue_title = sys.argv[1].strip()
+    repository = sys.argv[2].strip()
 
-    parts = issue_title.split(":")
-    if len(parts) == 4 and parts[0] == "move":
-        action = parts[1]
-        x = int(parts[2])
-        y = int(parts[3])
+    # Handle Reset Trigger
+    if issue_title.lower() == "reset":
+        import scripts.init_game as init_game_module
+        init_game_module.init_game()
+        game = load_game()
+        game["log"].append("🔄 Game board was reset!")
+        save_game(game)
+        render_readme(game, repository)
+        print("Game reset successfully.")
+        return
 
-        game_data = load_game()
-        process_move(game_data, action, x, y, author)
-        run_bot_turns(game_data)
-        save_game(game_data)
-        render_readme(game_data, repository)
+    # Process standard turns ...
+    game = load_game()
+    render_readme(game, repository)
+
+if __name__ == "__main__":
+    main()
