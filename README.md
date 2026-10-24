@@ -1,6 +1,6 @@
 # ⚔️ Git Mine Empires: Battlegrounds (Isometric 3D)
 
-> ⏱️ Current Turn: **@user1** | [🔄 **Reset Board**](https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=reset&amp;body=Click+Submit+New+Issue+to+reset+the+game+board.)
+> ⏱️ Current Turn: **@user1** | [🔄 **Reset Board**](https://github.com/arjunagarwal1311-del/octo-minesweeper/issues/new?title=reset&amp;body=Click+Submit+New+Issue+to+reset+the+game+board.)
 
 ### 🏆 Empire Territories
 | Player | Type | Empire Color | Territory Size | Status |
