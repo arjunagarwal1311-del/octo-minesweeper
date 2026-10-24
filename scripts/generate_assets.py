@@ -1,92 +1,74 @@
 import os
-import json
-import sys
 
-README_FILE = "README.md"
-STATE_FILE = "state/game.json"
+ASSETS_DIR = "assets/tiles"
 
-def load_game():
-    with open(STATE_FILE, "r", encoding="utf-8") as f:
-        return json.load(f)
+def tile_wrapper(inner_svg):
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" shape-rendering="crispEdges">
+{inner_svg}
+</svg>'''
 
-def save_game(game):
-    with open(STATE_FILE, "w", encoding="utf-8") as f:
-        json.dump(game, f, indent=2)
+# Classic 2D Unrevealed Block
+HIDDEN_TILE = tile_wrapper('''
+  <rect width="32" height="32" fill="#c0c0c0"/>
+  <polygon points="0,0 32,0 28,4 4,4 4,28 0,32" fill="#ffffff"/>
+  <polygon points="32,0 32,32 0,32 4,28 28,28 28,4" fill="#808080"/>
+  <rect x="4" y="4" width="24" height="24" fill="#c0c0c0"/>
+''')
 
-def render_readme(game, repository):
-    lines = []
-    lines.append(f"# ⚔️ Git Mine Empires: Battlegrounds (3D Retro)\n")
-    
-    active_player = game["players"][game["current_player_idx"] % len(game["players"])]
-    reset_url = f"https://github.com/{repository}/issues/new?title=reset&body=Click+Submit+New+Issue+to+reset+the+game+board."
-    
-    lines.append(f"> ⏱️ Current Turn: **{active_player['name']}** | [🔄 **Reset Board**]({reset_url})\n")
+REVEALED_BASE = '''
+  <rect width="32" height="32" fill="#bdbdbd"/>
+  <rect x="0" y="0" width="32" height="1" fill="#7b7b7b"/>
+  <rect x="0" y="0" width="1" height="32" fill="#7b7b7b"/>
+'''
 
-    lines.append("### 🏆 Empire Leaderboard")
-    lines.append("| Player | Type | Color | Territory Size | Status |")
-    lines.append("| :--- | :--- | :--- | :--- | :--- |")
-    for p in game["players"]:
-        status_icon = "🟢 Active" if p["status"] == "active" else "💀 Eliminated"
-        lines.append(f"| {p['name']} | {p['type'].upper()} | `{p['color']}` | {p['score']} Blocks | {status_icon} |")
-    lines.append("\n")
+FLAG_TILE = tile_wrapper('''
+  <rect width="32" height="32" fill="#c0c0c0"/>
+  <polygon points="0,0 32,0 28,4 4,4 4,28 0,32" fill="#ffffff"/>
+  <polygon points="32,0 32,32 0,32 4,28 28,28 28,4" fill="#808080"/>
+  <rect x="4" y="4" width="24" height="24" fill="#c0c0c0"/>
+  <line x1="12" y1="24" x2="12" y2="8" stroke="#000000" stroke-width="2"/>
+  <polygon points="12,8 24,12 12,16" fill="#ff0000"/>
+  <rect x="8" y="22" width="10" height="3" fill="#000000"/>
+''')
 
-    lines.append("### 🗺️ Dynamic Battleground (Click tile to Conquer)")
-    lines.append("<sub>Click any 3D tile to submit your turn via GitHub Issues:</sub>\n")
+MINE_TILE = tile_wrapper(REVEALED_BASE + '''
+  <circle cx="16" cy="16" r="7" fill="#000000"/>
+  <line x1="16" y1="5" x2="16" y2="27" stroke="#000000" stroke-width="2"/>
+  <line x1="5" y1="16" x2="27" y2="16" stroke="#000000" stroke-width="2"/>
+  <circle cx="14" cy="14" r="2" fill="#ffffff"/>
+''')
 
-    # Interactive HTML Grid with 3D Sprites
-    lines.append('<table border="0" cellspacing="0" cellpadding="0">')
-    for y in range(game["height"]):
-        lines.append('  <tr>')
-        for x in range(game["width"]):
-            cell = game["grid"][y][x]
-            state = cell["state"]
-            
-            if state == "hidden":
-                issue_url = f"https://github.com/{repository}/issues/new?title=move:reveal:{x}:{y}&body=Click+Submit+New+Issue+to+confirm+turn."
-                cell_html = f'<a href="{issue_url}"><img src="assets/tiles/hidden.svg" width="34" height="34" align="top" alt="tile"/></a>'
-            elif state == "flagged":
-                cell_html = '<img src="assets/tiles/flag.svg" width="34" height="34" align="top" alt="flag"/>'
-            elif state == "revealed":
-                if cell.get("is_mine"):
-                    cell_html = '<img src="assets/tiles/mine.svg" width="34" height="34" align="top" alt="mine"/>'
-                else:
-                    val = cell.get("neighbor_mines", 0)
-                    color = cell.get("owner_color")
-                    tile_name = f"{color}_{val}" if color else f"num_{val}"
-                    if not os.path.exists(f"assets/tiles/{tile_name}.svg"):
-                        tile_name = f"num_{val}"
-                    cell_html = f'<img src="assets/tiles/{tile_name}.svg" width="34" height="34" align="top" alt="{val}"/>'
+NUM_COLORS = {
+    0: "transparent", 1: "#0000ff", 2: "#007b00", 3: "#ff0000",
+    4: "#00007b", 5: "#7b0000", 6: "#007b7b", 7: "#000000", 8: "#7b7b7b"
+}
 
-            lines.append(f'    <td width="34" height="34" align="center" valign="middle">{cell_html}</td>')
-        lines.append('  </tr>')
-    lines.append('</table>')
+PLAYER_COLORS = {
+    "blue": "#1e90ff", "red": "#ff4757", "green": "#2ed573", "purple": "#a55eea"
+}
 
-    lines.append("\n### 📜 Recent Moves Log")
-    for log_item in game["log"][-5:]:
-        lines.append(f"- {log_item}")
+TILES = {
+    "hidden": HIDDEN_TILE,
+    "flag": FLAG_TILE,
+    "mine": MINE_TILE
+}
 
-    with open(README_FILE, "w", encoding="utf-8") as f:
-        f.write("\n".join(lines))
+for num, color in NUM_COLORS.items():
+    text = "" if num == 0 else f'<text x="16" y="22" font-family="monospace, Arial" font-weight="900" font-size="18" fill="{color}" text-anchor="middle">{num}</text>'
+    TILES[f"num_{num}"] = tile_wrapper(REVEALED_BASE + text)
 
-def main():
-    if len(sys.argv) < 3:
-        sys.exit(1)
+for p_color, hex_val in PLAYER_COLORS.items():
+    for num, color in NUM_COLORS.items():
+        text = "" if num == 0 else f'<text x="16" y="22" font-family="monospace, Arial" font-weight="900" font-size="18" fill="{color}" text-anchor="middle">{num}</text>'
+        border_overlay = f'<rect x="1" y="1" width="30" height="30" fill="none" stroke="{hex_val}" stroke-width="3"/>'
+        TILES[f"{p_color}_{num}"] = tile_wrapper(REVEALED_BASE + text + border_overlay)
 
-    issue_title = sys.argv[1].strip()
-    repository = sys.argv[2].strip()
-
-    if issue_title.lower() == "reset":
-        import scripts.init_game as init_game_module
-        init_game_module.init_game()
-        game = load_game()
-        game["log"].append("🔄 Game board was reset!")
-        save_game(game)
-        render_readme(game, repository)
-        print("Game reset successfully.")
-        return
-
-    game = load_game()
-    render_readme(game, repository)
+def generate():
+    os.makedirs(ASSETS_DIR, exist_ok=True)
+    for name, code in TILES.items():
+        with open(f"{ASSETS_DIR}/{name}.svg", "w", encoding="utf-8") as f:
+            f.write(code)
+    print(f"✅ Generated {len(TILES)} 2D retro tiles in {ASSETS_DIR}/")
 
 if __name__ == "__main__":
-    main()
+    generate()

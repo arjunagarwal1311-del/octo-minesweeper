@@ -1,8 +1,12 @@
 import json
-import random
 import os
+import random
+
+STATE_FILE = "state/game.json"
 
 def init_game(width=10, height=10, num_mines=15):
+    os.makedirs("state", exist_ok=True)
+
     players = [
         {"name": "@arjunagarwal1311-del", "type": "human", "color": "blue", "score": 0, "status": "active"},
         {"name": "@user2", "type": "human", "color": "red", "score": 0, "status": "active"},
@@ -10,8 +14,11 @@ def init_game(width=10, height=10, num_mines=15):
         {"name": "@BotBeta", "type": "bot", "color": "purple", "score": 0, "status": "active"}
     ]
 
-    all_coords = [(x, y) for y in range(height) for x in range(width)]
-    mine_coords = set(random.sample(all_coords, num_mines))
+    mine_positions = set()
+    while len(mine_positions) < num_mines:
+        rx = random.randint(0, width - 1)
+        ry = random.randint(0, height - 1)
+        mine_positions.add((rx, ry))
 
     grid = []
     for y in range(height):
@@ -20,7 +27,7 @@ def init_game(width=10, height=10, num_mines=15):
             row.append({
                 "x": x,
                 "y": y,
-                "is_mine": (x, y) in mine_coords,
+                "is_mine": (x, y) in mine_positions,
                 "state": "hidden",
                 "owner": None,
                 "owner_color": None,
@@ -28,21 +35,35 @@ def init_game(width=10, height=10, num_mines=15):
             })
         grid.append(row)
 
-    game_data = {
+    for y in range(height):
+        for x in range(width):
+            if grid[y][x]["is_mine"]:
+                continue
+            count = 0
+            for dy in [-1, 0, 1]:
+                for dx in [-1, 0, 1]:
+                    if dx == 0 and dy == 0:
+                        continue
+                    nx, ny = x + dx, y + dy
+                    if 0 <= nx < width and 0 <= ny < height:
+                        if grid[ny][nx]["is_mine"]:
+                            count += 1
+            grid[y][x]["neighbor_mines"] = count
+
+    game_state = {
         "width": width,
         "height": height,
         "num_mines": num_mines,
         "current_player_idx": 0,
         "players": players,
         "grid": grid,
-        "log": ["🎮 Game initialized! @user1's turn to move."]
+        "log": [f"🎮 Game initialized! {players[0]['name']}'s turn to move."]
     }
 
-    os.makedirs("state", exist_ok=True)
-    with open("state/game.json", "w") as f:
-        json.dump(game_data, f, indent=2)
+    with open(STATE_FILE, "w", encoding="utf-8") as f:
+        json.dump(game_state, f, indent=2)
 
-    print("✅ Initialized game state in state/game.json")
+    print(f"✅ Board initialized for {players[0]['name']}")
 
 if __name__ == "__main__":
     init_game()
