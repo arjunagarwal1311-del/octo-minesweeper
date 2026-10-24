@@ -38,7 +38,7 @@
       {
         "x": 0,
         "y": 0,
-        "is_mine": false,
+        "is_mine": true,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
@@ -47,7 +47,7 @@
       {
         "x": 1,
         "y": 0,
-        "is_mine": true,
+        "is_mine": false,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
@@ -83,7 +83,7 @@
       {
         "x": 5,
         "y": 0,
-        "is_mine": false,
+        "is_mine": true,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
@@ -110,7 +110,7 @@
       {
         "x": 8,
         "y": 0,
-        "is_mine": false,
+        "is_mine": true,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
@@ -193,7 +193,7 @@
       {
         "x": 7,
         "y": 1,
-        "is_mine": false,
+        "is_mine": true,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
@@ -231,7 +231,7 @@
       {
         "x": 1,
         "y": 2,
-        "is_mine": true,
+        "is_mine": false,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
@@ -303,7 +303,7 @@
       {
         "x": 9,
         "y": 2,
-        "is_mine": true,
+        "is_mine": false,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
@@ -377,7 +377,7 @@
       {
         "x": 7,
         "y": 3,
-        "is_mine": true,
+        "is_mine": false,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
@@ -451,7 +451,7 @@
       {
         "x": 5,
         "y": 4,
-        "is_mine": false,
+        "is_mine": true,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
@@ -460,7 +460,7 @@
       {
         "x": 6,
         "y": 4,
-        "is_mine": true,
+        "is_mine": false,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
@@ -478,7 +478,7 @@
       {
         "x": 8,
         "y": 4,
-        "is_mine": false,
+        "is_mine": true,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
@@ -498,7 +498,7 @@
       {
         "x": 0,
         "y": 5,
-        "is_mine": true,
+        "is_mine": false,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
@@ -507,7 +507,7 @@
       {
         "x": 1,
         "y": 5,
-        "is_mine": false,
+        "is_mine": true,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
@@ -525,7 +525,7 @@
       {
         "x": 3,
         "y": 5,
-        "is_mine": true,
+        "is_mine": false,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
@@ -561,7 +561,7 @@
       {
         "x": 7,
         "y": 5,
-        "is_mine": true,
+        "is_mine": false,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
@@ -662,7 +662,7 @@
       {
         "x": 8,
         "y": 6,
-        "is_mine": false,
+        "is_mine": true,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
@@ -754,7 +754,7 @@
       {
         "x": 8,
         "y": 7,
-        "is_mine": true,
+        "is_mine": false,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
@@ -774,7 +774,7 @@
       {
         "x": 0,
         "y": 8,
-        "is_mine": false,
+        "is_mine": true,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
@@ -792,7 +792,7 @@
       {
         "x": 2,
         "y": 8,
-        "is_mine": true,
+        "is_mine": false,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
@@ -819,7 +819,7 @@
       {
         "x": 5,
         "y": 8,
-        "is_mine": false,
+        "is_mine": true,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
@@ -837,7 +837,7 @@
       {
         "x": 7,
         "y": 8,
-        "is_mine": false,
+        "is_mine": true,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
@@ -866,7 +866,7 @@
       {
         "x": 0,
         "y": 9,
-        "is_mine": true,
+        "is_mine": false,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
@@ -875,7 +875,7 @@
       {
         "x": 1,
         "y": 9,
-        "is_mine": true,
+        "is_mine": false,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
@@ -884,7 +884,7 @@
       {
         "x": 2,
         "y": 9,
-        "is_mine": false,
+        "is_mine": true,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
@@ -893,7 +893,7 @@
       {
         "x": 3,
         "y": 9,
-        "is_mine": false,
+        "is_mine": true,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
@@ -938,7 +938,7 @@
       {
         "x": 8,
         "y": 9,
-        "is_mine": true,
+        "is_mine": false,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
