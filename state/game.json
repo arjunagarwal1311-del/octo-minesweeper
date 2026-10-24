@@ -2,7 +2,7 @@
   "width": 10,
   "height": 10,
   "num_mines": 15,
-  "current_player_idx": 1,
+  "current_player_idx": 0,
   "players": [
     {
       "name": "@arjunagarwal1311-del",
@@ -15,21 +15,21 @@
       "name": "@verifiedzombie",
       "type": "human",
       "color": "red",
-      "score": 0,
+      "score": 1,
       "status": "active"
     },
     {
       "name": "@BotAlpha",
       "type": "bot",
       "color": "green",
-      "score": 0,
+      "score": 1,
       "status": "active"
     },
     {
       "name": "@BotBeta",
       "type": "bot",
       "color": "purple",
-      "score": 0,
+      "score": 44,
       "status": "active"
     }
   ],
@@ -48,37 +48,37 @@
         "x": 1,
         "y": 0,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
+        "neighbor_mines": 1
       },
       {
         "x": 2,
         "y": 0,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
         "neighbor_mines": 0
       },
       {
         "x": 3,
         "y": 0,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
         "neighbor_mines": 0
       },
       {
         "x": 4,
         "y": 0,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
+        "neighbor_mines": 1
       },
       {
         "x": 5,
@@ -131,64 +131,64 @@
         "x": 0,
         "y": 1,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
+        "neighbor_mines": 1
       },
       {
         "x": 1,
         "y": 1,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
+        "neighbor_mines": 1
       },
       {
         "x": 2,
         "y": 1,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
         "neighbor_mines": 0
       },
       {
         "x": 3,
         "y": 1,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
         "neighbor_mines": 0
       },
       {
         "x": 4,
         "y": 1,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
+        "neighbor_mines": 1
       },
       {
         "x": 5,
         "y": 1,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
+        "neighbor_mines": 1
       },
       {
         "x": 6,
         "y": 1,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
+        "neighbor_mines": 2
       },
       {
         "x": 7,
@@ -223,64 +223,64 @@
         "x": 0,
         "y": 2,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
         "neighbor_mines": 0
       },
       {
         "x": 1,
         "y": 2,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
         "neighbor_mines": 0
       },
       {
         "x": 2,
         "y": 2,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
         "neighbor_mines": 0
       },
       {
         "x": 3,
         "y": 2,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
         "neighbor_mines": 0
       },
       {
         "x": 4,
         "y": 2,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
         "neighbor_mines": 0
       },
       {
         "x": 5,
         "y": 2,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
         "neighbor_mines": 0
       },
       {
         "x": 6,
         "y": 2,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
+        "neighbor_mines": 1
       },
       {
         "x": 7,
@@ -315,64 +315,64 @@
         "x": 0,
         "y": 3,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
         "neighbor_mines": 0
       },
       {
         "x": 1,
         "y": 3,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
         "neighbor_mines": 0
       },
       {
         "x": 2,
         "y": 3,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
         "neighbor_mines": 0
       },
       {
         "x": 3,
         "y": 3,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
         "neighbor_mines": 0
       },
       {
         "x": 4,
         "y": 3,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
+        "neighbor_mines": 1
       },
       {
         "x": 5,
         "y": 3,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
+        "neighbor_mines": 1
       },
       {
         "x": 6,
         "y": 3,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
+        "neighbor_mines": 1
       },
       {
         "x": 7,
@@ -407,46 +407,46 @@
         "x": 0,
         "y": 4,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
+        "neighbor_mines": 1
       },
       {
         "x": 1,
         "y": 4,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
+        "neighbor_mines": 1
       },
       {
         "x": 2,
         "y": 4,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
+        "neighbor_mines": 1
       },
       {
         "x": 3,
         "y": 4,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
         "neighbor_mines": 0
       },
       {
         "x": 4,
         "y": 4,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
+        "neighbor_mines": 1
       },
       {
         "x": 5,
@@ -517,28 +517,28 @@
         "x": 2,
         "y": 5,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
+        "neighbor_mines": 1
       },
       {
         "x": 3,
         "y": 5,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
         "neighbor_mines": 0
       },
       {
         "x": 4,
         "y": 5,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
+        "neighbor_mines": 2
       },
       {
         "x": 5,
@@ -600,37 +600,37 @@
         "x": 1,
         "y": 6,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
+        "state": "revealed",
+        "owner": "@verifiedzombie",
+        "owner_color": "red",
+        "neighbor_mines": 1
       },
       {
         "x": 2,
         "y": 6,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
+        "neighbor_mines": 1
       },
       {
         "x": 3,
         "y": 6,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
         "neighbor_mines": 0
       },
       {
         "x": 4,
         "y": 6,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
+        "neighbor_mines": 1
       },
       {
         "x": 5,
@@ -692,37 +692,37 @@
         "x": 1,
         "y": 7,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
+        "neighbor_mines": 1
       },
       {
         "x": 2,
         "y": 7,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
         "neighbor_mines": 0
       },
       {
         "x": 3,
         "y": 7,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
         "neighbor_mines": 0
       },
       {
         "x": 4,
         "y": 7,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
+        "neighbor_mines": 2
       },
       {
         "x": 5,
@@ -784,37 +784,37 @@
         "x": 1,
         "y": 8,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
+        "neighbor_mines": 2
       },
       {
         "x": 2,
         "y": 8,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
+        "neighbor_mines": 2
       },
       {
         "x": 3,
         "y": 8,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
+        "neighbor_mines": 2
       },
       {
         "x": 4,
         "y": 8,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
+        "neighbor_mines": 2
       },
       {
         "x": 5,
@@ -939,10 +939,10 @@
         "x": 8,
         "y": 9,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
+        "state": "revealed",
+        "owner": "@BotAlpha",
+        "owner_color": "green",
+        "neighbor_mines": 2
       },
       {
         "x": 9,
@@ -958,6 +958,9 @@
   "log": [
     "\ud83c\udfae Game initialized! @user1's turn to move.",
     "\u26a0\ufe0f Ignored move from arjunagarwal1311-del: Not their turn.",
-    "\u26cf\ufe0f @arjunagarwal1311-del revealed (8, 5) and claimed 1 blocks!"
+    "\u26cf\ufe0f @arjunagarwal1311-del revealed (8, 5) and claimed 1 blocks!",
+    "\u26cf\ufe0f @verifiedzombie revealed (1, 6) and claimed 1 blocks!",
+    "\u26cf\ufe0f @BotAlpha revealed (8, 9) and claimed 1 blocks!",
+    "\u26cf\ufe0f @BotBeta revealed (3, 5) and claimed 44 blocks!"
   ]
 }
