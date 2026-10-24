@@ -1,0 +1,603 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 334" width="600" height="334">
+  <rect width="100%" height="100%" fill="#0b0f19" rx="8"/>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:0:0&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="273,40 300,53 300,67 273,54" fill="#1e293b"/>
+        <polygon points="300,53 327,40 327,54 300,67" fill="#0f172a"/>
+        <polygon points="300,27 327,40 300,53 273,40" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:1:0&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="300,53 327,66 327,80 300,67" fill="#1e293b"/>
+        <polygon points="327,66 354,53 354,67 327,80" fill="#0f172a"/>
+        <polygon points="327,40 354,53 327,66 300,53" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:2:0&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="327,66 354,79 354,93 327,80" fill="#1e293b"/>
+        <polygon points="354,79 381,66 381,80 354,93" fill="#0f172a"/>
+        <polygon points="354,53 381,66 354,79 327,66" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:3:0&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="354,79 381,92 381,106 354,93" fill="#1e293b"/>
+        <polygon points="381,92 408,79 408,93 381,106" fill="#0f172a"/>
+        <polygon points="381,66 408,79 381,92 354,79" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:4:0&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="381,92 408,105 408,119 381,106" fill="#1e293b"/>
+        <polygon points="408,105 435,92 435,106 408,119" fill="#0f172a"/>
+        <polygon points="408,79 435,92 408,105 381,92" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:5:0&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="408,105 435,118 435,132 408,119" fill="#1e293b"/>
+        <polygon points="435,118 462,105 462,119 435,132" fill="#0f172a"/>
+        <polygon points="435,92 462,105 435,118 408,105" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:6:0&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="435,118 462,131 462,145 435,132" fill="#1e293b"/>
+        <polygon points="462,131 489,118 489,132 462,145" fill="#0f172a"/>
+        <polygon points="462,105 489,118 462,131 435,118" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:7:0&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="462,131 489,144 489,158 462,145" fill="#1e293b"/>
+        <polygon points="489,144 516,131 516,145 489,158" fill="#0f172a"/>
+        <polygon points="489,118 516,131 489,144 462,131" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:8:0&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="489,144 516,157 516,171 489,158" fill="#1e293b"/>
+        <polygon points="516,157 543,144 543,158 516,171" fill="#0f172a"/>
+        <polygon points="516,131 543,144 516,157 489,144" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:9:0&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="516,157 543,170 543,184 516,171" fill="#1e293b"/>
+        <polygon points="543,170 570,157 570,171 543,184" fill="#0f172a"/>
+        <polygon points="543,144 570,157 543,170 516,157" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:0:1&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="246,53 273,66 273,80 246,67" fill="#1e293b"/>
+        <polygon points="273,66 300,53 300,67 273,80" fill="#0f172a"/>
+        <polygon points="273,40 300,53 273,66 246,53" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:1:1&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="273,66 300,79 300,93 273,80" fill="#1e293b"/>
+        <polygon points="300,79 327,66 327,80 300,93" fill="#0f172a"/>
+        <polygon points="300,53 327,66 300,79 273,66" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:2:1&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="300,79 327,92 327,106 300,93" fill="#1e293b"/>
+        <polygon points="327,92 354,79 354,93 327,106" fill="#0f172a"/>
+        <polygon points="327,66 354,79 327,92 300,79" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:3:1&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="327,92 354,105 354,119 327,106" fill="#1e293b"/>
+        <polygon points="354,105 381,92 381,106 354,119" fill="#0f172a"/>
+        <polygon points="354,79 381,92 354,105 327,92" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:4:1&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="354,105 381,118 381,132 354,119" fill="#1e293b"/>
+        <polygon points="381,118 408,105 408,119 381,132" fill="#0f172a"/>
+        <polygon points="381,92 408,105 381,118 354,105" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:5:1&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="381,118 408,131 408,145 381,132" fill="#1e293b"/>
+        <polygon points="408,131 435,118 435,132 408,145" fill="#0f172a"/>
+        <polygon points="408,105 435,118 408,131 381,118" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:6:1&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="408,131 435,144 435,158 408,145" fill="#1e293b"/>
+        <polygon points="435,144 462,131 462,145 435,158" fill="#0f172a"/>
+        <polygon points="435,118 462,131 435,144 408,131" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:7:1&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="435,144 462,157 462,171 435,158" fill="#1e293b"/>
+        <polygon points="462,157 489,144 489,158 462,171" fill="#0f172a"/>
+        <polygon points="462,131 489,144 462,157 435,144" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:8:1&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="462,157 489,170 489,184 462,171" fill="#1e293b"/>
+        <polygon points="489,170 516,157 516,171 489,184" fill="#0f172a"/>
+        <polygon points="489,144 516,157 489,170 462,157" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:9:1&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="489,170 516,183 516,197 489,184" fill="#1e293b"/>
+        <polygon points="516,183 543,170 543,184 516,197" fill="#0f172a"/>
+        <polygon points="516,157 543,170 516,183 489,170" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:0:2&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="219,66 246,79 246,93 219,80" fill="#1e293b"/>
+        <polygon points="246,79 273,66 273,80 246,93" fill="#0f172a"/>
+        <polygon points="246,53 273,66 246,79 219,66" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:1:2&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="246,79 273,92 273,106 246,93" fill="#1e293b"/>
+        <polygon points="273,92 300,79 300,93 273,106" fill="#0f172a"/>
+        <polygon points="273,66 300,79 273,92 246,79" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:2:2&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="273,92 300,105 300,119 273,106" fill="#1e293b"/>
+        <polygon points="300,105 327,92 327,106 300,119" fill="#0f172a"/>
+        <polygon points="300,79 327,92 300,105 273,92" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:3:2&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="300,105 327,118 327,132 300,119" fill="#1e293b"/>
+        <polygon points="327,118 354,105 354,119 327,132" fill="#0f172a"/>
+        <polygon points="327,92 354,105 327,118 300,105" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:4:2&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="327,118 354,131 354,145 327,132" fill="#1e293b"/>
+        <polygon points="354,131 381,118 381,132 354,145" fill="#0f172a"/>
+        <polygon points="354,105 381,118 354,131 327,118" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:5:2&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="354,131 381,144 381,158 354,145" fill="#1e293b"/>
+        <polygon points="381,144 408,131 408,145 381,158" fill="#0f172a"/>
+        <polygon points="381,118 408,131 381,144 354,131" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:6:2&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="381,144 408,157 408,171 381,158" fill="#1e293b"/>
+        <polygon points="408,157 435,144 435,158 408,171" fill="#0f172a"/>
+        <polygon points="408,131 435,144 408,157 381,144" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:7:2&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="408,157 435,170 435,184 408,171" fill="#1e293b"/>
+        <polygon points="435,170 462,157 462,171 435,184" fill="#0f172a"/>
+        <polygon points="435,144 462,157 435,170 408,157" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:8:2&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="435,170 462,183 462,197 435,184" fill="#1e293b"/>
+        <polygon points="462,183 489,170 489,184 462,197" fill="#0f172a"/>
+        <polygon points="462,157 489,170 462,183 435,170" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:9:2&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="462,183 489,196 489,210 462,197" fill="#1e293b"/>
+        <polygon points="489,196 516,183 516,197 489,210" fill="#0f172a"/>
+        <polygon points="489,170 516,183 489,196 462,183" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:0:3&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="192,79 219,92 219,106 192,93" fill="#1e293b"/>
+        <polygon points="219,92 246,79 246,93 219,106" fill="#0f172a"/>
+        <polygon points="219,66 246,79 219,92 192,79" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:1:3&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="219,92 246,105 246,119 219,106" fill="#1e293b"/>
+        <polygon points="246,105 273,92 273,106 246,119" fill="#0f172a"/>
+        <polygon points="246,79 273,92 246,105 219,92" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:2:3&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="246,105 273,118 273,132 246,119" fill="#1e293b"/>
+        <polygon points="273,118 300,105 300,119 273,132" fill="#0f172a"/>
+        <polygon points="273,92 300,105 273,118 246,105" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:3:3&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="273,118 300,131 300,145 273,132" fill="#1e293b"/>
+        <polygon points="300,131 327,118 327,132 300,145" fill="#0f172a"/>
+        <polygon points="300,105 327,118 300,131 273,118" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:4:3&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="300,131 327,144 327,158 300,145" fill="#1e293b"/>
+        <polygon points="327,144 354,131 354,145 327,158" fill="#0f172a"/>
+        <polygon points="327,118 354,131 327,144 300,131" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:5:3&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="327,144 354,157 354,171 327,158" fill="#1e293b"/>
+        <polygon points="354,157 381,144 381,158 354,171" fill="#0f172a"/>
+        <polygon points="354,131 381,144 354,157 327,144" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:6:3&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="354,157 381,170 381,184 354,171" fill="#1e293b"/>
+        <polygon points="381,170 408,157 408,171 381,184" fill="#0f172a"/>
+        <polygon points="381,144 408,157 381,170 354,157" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:7:3&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="381,170 408,183 408,197 381,184" fill="#1e293b"/>
+        <polygon points="408,183 435,170 435,184 408,197" fill="#0f172a"/>
+        <polygon points="408,157 435,170 408,183 381,170" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:8:3&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="408,183 435,196 435,210 408,197" fill="#1e293b"/>
+        <polygon points="435,196 462,183 462,197 435,210" fill="#0f172a"/>
+        <polygon points="435,170 462,183 435,196 408,183" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:9:3&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="435,196 462,209 462,223 435,210" fill="#1e293b"/>
+        <polygon points="462,209 489,196 489,210 462,223" fill="#0f172a"/>
+        <polygon points="462,183 489,196 462,209 435,196" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:0:4&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="165,92 192,105 192,119 165,106" fill="#1e293b"/>
+        <polygon points="192,105 219,92 219,106 192,119" fill="#0f172a"/>
+        <polygon points="192,79 219,92 192,105 165,92" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:1:4&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="192,105 219,118 219,132 192,119" fill="#1e293b"/>
+        <polygon points="219,118 246,105 246,119 219,132" fill="#0f172a"/>
+        <polygon points="219,92 246,105 219,118 192,105" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:2:4&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="219,118 246,131 246,145 219,132" fill="#1e293b"/>
+        <polygon points="246,131 273,118 273,132 246,145" fill="#0f172a"/>
+        <polygon points="246,105 273,118 246,131 219,118" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:3:4&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="246,131 273,144 273,158 246,145" fill="#1e293b"/>
+        <polygon points="273,144 300,131 300,145 273,158" fill="#0f172a"/>
+        <polygon points="273,118 300,131 273,144 246,131" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:4:4&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="273,144 300,157 300,171 273,158" fill="#1e293b"/>
+        <polygon points="300,157 327,144 327,158 300,171" fill="#0f172a"/>
+        <polygon points="300,131 327,144 300,157 273,144" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:5:4&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="300,157 327,170 327,184 300,171" fill="#1e293b"/>
+        <polygon points="327,170 354,157 354,171 327,184" fill="#0f172a"/>
+        <polygon points="327,144 354,157 327,170 300,157" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:6:4&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="327,170 354,183 354,197 327,184" fill="#1e293b"/>
+        <polygon points="354,183 381,170 381,184 354,197" fill="#0f172a"/>
+        <polygon points="354,157 381,170 354,183 327,170" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:7:4&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="354,183 381,196 381,210 354,197" fill="#1e293b"/>
+        <polygon points="381,196 408,183 408,197 381,210" fill="#0f172a"/>
+        <polygon points="381,170 408,183 381,196 354,183" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:8:4&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="381,196 408,209 408,223 381,210" fill="#1e293b"/>
+        <polygon points="408,209 435,196 435,210 408,223" fill="#0f172a"/>
+        <polygon points="408,183 435,196 408,209 381,196" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:9:4&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="408,209 435,222 435,236 408,223" fill="#1e293b"/>
+        <polygon points="435,222 462,209 462,223 435,236" fill="#0f172a"/>
+        <polygon points="435,196 462,209 435,222 408,209" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:0:5&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="138,105 165,118 165,132 138,119" fill="#1e293b"/>
+        <polygon points="165,118 192,105 192,119 165,132" fill="#0f172a"/>
+        <polygon points="165,92 192,105 165,118 138,105" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:1:5&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="165,118 192,131 192,145 165,132" fill="#1e293b"/>
+        <polygon points="192,131 219,118 219,132 192,145" fill="#0f172a"/>
+        <polygon points="192,105 219,118 192,131 165,118" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:2:5&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="192,131 219,144 219,158 192,145" fill="#1e293b"/>
+        <polygon points="219,144 246,131 246,145 219,158" fill="#0f172a"/>
+        <polygon points="219,118 246,131 219,144 192,131" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:3:5&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="219,144 246,157 246,171 219,158" fill="#1e293b"/>
+        <polygon points="246,157 273,144 273,158 246,171" fill="#0f172a"/>
+        <polygon points="246,131 273,144 246,157 219,144" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:4:5&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="246,157 273,170 273,184 246,171" fill="#1e293b"/>
+        <polygon points="273,170 300,157 300,171 273,184" fill="#0f172a"/>
+        <polygon points="273,144 300,157 273,170 246,157" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:5:5&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="273,170 300,183 300,197 273,184" fill="#1e293b"/>
+        <polygon points="300,183 327,170 327,184 300,197" fill="#0f172a"/>
+        <polygon points="300,157 327,170 300,183 273,170" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:6:5&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="300,183 327,196 327,210 300,197" fill="#1e293b"/>
+        <polygon points="327,196 354,183 354,197 327,210" fill="#0f172a"/>
+        <polygon points="327,170 354,183 327,196 300,183" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:7:5&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="327,196 354,209 354,223 327,210" fill="#1e293b"/>
+        <polygon points="354,209 381,196 381,210 354,223" fill="#0f172a"/>
+        <polygon points="354,183 381,196 354,209 327,196" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:8:5&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="354,209 381,222 381,236 354,223" fill="#1e293b"/>
+        <polygon points="381,222 408,209 408,223 381,236" fill="#0f172a"/>
+        <polygon points="381,196 408,209 381,222 354,209" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:9:5&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="381,222 408,235 408,249 381,236" fill="#1e293b"/>
+        <polygon points="408,235 435,222 435,236 408,249" fill="#0f172a"/>
+        <polygon points="408,209 435,222 408,235 381,222" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:0:6&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="111,118 138,131 138,145 111,132" fill="#1e293b"/>
+        <polygon points="138,131 165,118 165,132 138,145" fill="#0f172a"/>
+        <polygon points="138,105 165,118 138,131 111,118" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:1:6&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="138,131 165,144 165,158 138,145" fill="#1e293b"/>
+        <polygon points="165,144 192,131 192,145 165,158" fill="#0f172a"/>
+        <polygon points="165,118 192,131 165,144 138,131" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:2:6&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="165,144 192,157 192,171 165,158" fill="#1e293b"/>
+        <polygon points="192,157 219,144 219,158 192,171" fill="#0f172a"/>
+        <polygon points="192,131 219,144 192,157 165,144" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:3:6&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="192,157 219,170 219,184 192,171" fill="#1e293b"/>
+        <polygon points="219,170 246,157 246,171 219,184" fill="#0f172a"/>
+        <polygon points="219,144 246,157 219,170 192,157" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:4:6&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="219,170 246,183 246,197 219,184" fill="#1e293b"/>
+        <polygon points="246,183 273,170 273,184 246,197" fill="#0f172a"/>
+        <polygon points="246,157 273,170 246,183 219,170" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:5:6&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="246,183 273,196 273,210 246,197" fill="#1e293b"/>
+        <polygon points="273,196 300,183 300,197 273,210" fill="#0f172a"/>
+        <polygon points="273,170 300,183 273,196 246,183" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:6:6&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="273,196 300,209 300,223 273,210" fill="#1e293b"/>
+        <polygon points="300,209 327,196 327,210 300,223" fill="#0f172a"/>
+        <polygon points="300,183 327,196 300,209 273,196" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:7:6&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="300,209 327,222 327,236 300,223" fill="#1e293b"/>
+        <polygon points="327,222 354,209 354,223 327,236" fill="#0f172a"/>
+        <polygon points="327,196 354,209 327,222 300,209" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:8:6&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="327,222 354,235 354,249 327,236" fill="#1e293b"/>
+        <polygon points="354,235 381,222 381,236 354,249" fill="#0f172a"/>
+        <polygon points="354,209 381,222 354,235 327,222" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:9:6&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="354,235 381,248 381,262 354,249" fill="#1e293b"/>
+        <polygon points="381,248 408,235 408,249 381,262" fill="#0f172a"/>
+        <polygon points="381,222 408,235 381,248 354,235" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:0:7&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="84,131 111,144 111,158 84,145" fill="#1e293b"/>
+        <polygon points="111,144 138,131 138,145 111,158" fill="#0f172a"/>
+        <polygon points="111,118 138,131 111,144 84,131" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:1:7&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="111,144 138,157 138,171 111,158" fill="#1e293b"/>
+        <polygon points="138,157 165,144 165,158 138,171" fill="#0f172a"/>
+        <polygon points="138,131 165,144 138,157 111,144" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:2:7&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="138,157 165,170 165,184 138,171" fill="#1e293b"/>
+        <polygon points="165,170 192,157 192,171 165,184" fill="#0f172a"/>
+        <polygon points="165,144 192,157 165,170 138,157" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:3:7&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="165,170 192,183 192,197 165,184" fill="#1e293b"/>
+        <polygon points="192,183 219,170 219,184 192,197" fill="#0f172a"/>
+        <polygon points="192,157 219,170 192,183 165,170" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:4:7&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="192,183 219,196 219,210 192,197" fill="#1e293b"/>
+        <polygon points="219,196 246,183 246,197 219,210" fill="#0f172a"/>
+        <polygon points="219,170 246,183 219,196 192,183" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:5:7&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="219,196 246,209 246,223 219,210" fill="#1e293b"/>
+        <polygon points="246,209 273,196 273,210 246,223" fill="#0f172a"/>
+        <polygon points="246,183 273,196 246,209 219,196" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:6:7&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="246,209 273,222 273,236 246,223" fill="#1e293b"/>
+        <polygon points="273,222 300,209 300,223 273,236" fill="#0f172a"/>
+        <polygon points="273,196 300,209 273,222 246,209" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:7:7&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="273,222 300,235 300,249 273,236" fill="#1e293b"/>
+        <polygon points="300,235 327,222 327,236 300,249" fill="#0f172a"/>
+        <polygon points="300,209 327,222 300,235 273,222" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:8:7&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="300,235 327,248 327,262 300,249" fill="#1e293b"/>
+        <polygon points="327,248 354,235 354,249 327,262" fill="#0f172a"/>
+        <polygon points="327,222 354,235 327,248 300,235" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:9:7&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="327,248 354,261 354,275 327,262" fill="#1e293b"/>
+        <polygon points="354,261 381,248 381,262 354,275" fill="#0f172a"/>
+        <polygon points="354,235 381,248 354,261 327,248" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:0:8&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="57,144 84,157 84,171 57,158" fill="#1e293b"/>
+        <polygon points="84,157 111,144 111,158 84,171" fill="#0f172a"/>
+        <polygon points="84,131 111,144 84,157 57,144" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:1:8&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="84,157 111,170 111,184 84,171" fill="#1e293b"/>
+        <polygon points="111,170 138,157 138,171 111,184" fill="#0f172a"/>
+        <polygon points="111,144 138,157 111,170 84,157" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:2:8&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="111,170 138,183 138,197 111,184" fill="#1e293b"/>
+        <polygon points="138,183 165,170 165,184 138,197" fill="#0f172a"/>
+        <polygon points="138,157 165,170 138,183 111,170" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:3:8&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="138,183 165,196 165,210 138,197" fill="#1e293b"/>
+        <polygon points="165,196 192,183 192,197 165,210" fill="#0f172a"/>
+        <polygon points="165,170 192,183 165,196 138,183" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:4:8&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="165,196 192,209 192,223 165,210" fill="#1e293b"/>
+        <polygon points="192,209 219,196 219,210 192,223" fill="#0f172a"/>
+        <polygon points="192,183 219,196 192,209 165,196" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:5:8&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="192,209 219,222 219,236 192,223" fill="#1e293b"/>
+        <polygon points="219,222 246,209 246,223 219,236" fill="#0f172a"/>
+        <polygon points="219,196 246,209 219,222 192,209" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:6:8&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="219,222 246,235 246,249 219,236" fill="#1e293b"/>
+        <polygon points="246,235 273,222 273,236 246,249" fill="#0f172a"/>
+        <polygon points="246,209 273,222 246,235 219,222" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:7:8&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="246,235 273,248 273,262 246,249" fill="#1e293b"/>
+        <polygon points="273,248 300,235 300,249 273,262" fill="#0f172a"/>
+        <polygon points="273,222 300,235 273,248 246,235" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:8:8&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="273,248 300,261 300,275 273,262" fill="#1e293b"/>
+        <polygon points="300,261 327,248 327,262 300,275" fill="#0f172a"/>
+        <polygon points="300,235 327,248 300,261 273,248" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:9:8&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="300,261 327,274 327,288 300,275" fill="#1e293b"/>
+        <polygon points="327,274 354,261 354,275 327,288" fill="#0f172a"/>
+        <polygon points="327,248 354,261 327,274 300,261" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:0:9&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="30,157 57,170 57,184 30,171" fill="#1e293b"/>
+        <polygon points="57,170 84,157 84,171 57,184" fill="#0f172a"/>
+        <polygon points="57,144 84,157 57,170 30,157" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:1:9&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="57,170 84,183 84,197 57,184" fill="#1e293b"/>
+        <polygon points="84,183 111,170 111,184 84,197" fill="#0f172a"/>
+        <polygon points="84,157 111,170 84,183 57,170" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:2:9&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="84,183 111,196 111,210 84,197" fill="#1e293b"/>
+        <polygon points="111,196 138,183 138,197 111,210" fill="#0f172a"/>
+        <polygon points="111,170 138,183 111,196 84,183" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:3:9&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="111,196 138,209 138,223 111,210" fill="#1e293b"/>
+        <polygon points="138,209 165,196 165,210 138,223" fill="#0f172a"/>
+        <polygon points="138,183 165,196 138,209 111,196" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:4:9&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="138,209 165,222 165,236 138,223" fill="#1e293b"/>
+        <polygon points="165,222 192,209 192,223 165,236" fill="#0f172a"/>
+        <polygon points="165,196 192,209 165,222 138,209" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:5:9&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="165,222 192,235 192,249 165,236" fill="#1e293b"/>
+        <polygon points="192,235 219,222 219,236 192,249" fill="#0f172a"/>
+        <polygon points="192,209 219,222 192,235 165,222" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:6:9&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="192,235 219,248 219,262 192,249" fill="#1e293b"/>
+        <polygon points="219,248 246,235 246,249 219,262" fill="#0f172a"/>
+        <polygon points="219,222 246,235 219,248 192,235" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:7:9&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="219,248 246,261 246,275 219,262" fill="#1e293b"/>
+        <polygon points="246,261 273,248 273,262 246,275" fill="#0f172a"/>
+        <polygon points="246,235 273,248 246,261 219,248" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:8:9&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="246,261 273,274 273,288 246,275" fill="#1e293b"/>
+        <polygon points="273,274 300,261 300,275 273,288" fill="#0f172a"/>
+        <polygon points="273,248 300,261 273,274 246,261" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+<a href="https://github.com/arjunagarwal1311-del/octo-minesweeper-/issues/new?title=move:reveal:9:9&amp;body=Click+Submit+New+Issue+to+confirm+turn." target="_blank">
+    <g class="tile">
+        <polygon points="273,274 300,287 300,301 273,288" fill="#1e293b"/>
+        <polygon points="300,287 327,274 327,288 300,301" fill="#0f172a"/>
+        <polygon points="300,261 327,274 300,287 273,274" fill="#334155" stroke="#475569" stroke-width="0.8"/>
+    </g></a>
+</svg>
