@@ -5,7 +5,7 @@ import scripts.engine as engine
 init.init_game()
 
 # 2. Render README with YOUR EXACT REPO DETAILS (Change these two!)
-USERNAME = "your-actual-github-username"
+USERNAME = "arjunagarwal1311-del"
 REPO = "octo-minesweeper"
 
 engine.render_readme(engine.load_game(), f"{USERNAME}/{REPO}")
