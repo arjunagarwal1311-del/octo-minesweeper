@@ -4,7 +4,7 @@ import os
 
 def init_game(width=10, height=10, num_mines=15):
     players = [
-        {"name": "@user1", "type": "human", "color": "blue", "score": 0, "status": "active"},
+        {"name": "@arjunagarwal1311-del", "type": "human", "color": "blue", "score": 0, "status": "active"},
         {"name": "@user2", "type": "human", "color": "red", "score": 0, "status": "active"},
         {"name": "@BotAlpha", "type": "bot", "color": "green", "score": 0, "status": "active"},
         {"name": "@BotBeta", "type": "bot", "color": "purple", "score": 0, "status": "active"}
