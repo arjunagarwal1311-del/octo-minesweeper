@@ -41,6 +41,9 @@ def render_readme(game, repository):
     lines.append("### 🗺️ Dynamic Battleground (Click tile to Conquer)")
     lines.append("<sub>Click any tile to submit your move via GitHub Issues:</sub>\n")
 
+    # Base raw asset URL so GitHub always finds the SVG tiles
+    raw_asset_base = f"https://raw.githubusercontent.com/{repository}/main/assets/tiles"
+
     lines.append('<table border="0" cellspacing="0" cellpadding="0">')
     for y in range(game["height"]):
         lines.append('  <tr>')
@@ -50,17 +53,17 @@ def render_readme(game, repository):
             
             if state == "hidden":
                 issue_url = f"https://github.com/{repository}/issues/new?title=move:reveal:{x}:{y}&body=Click+Submit+New+Issue+to+confirm+turn."
-                cell_html = f'<a href="{issue_url}"><img src="assets/tiles/hidden.svg" width="32" height="32" align="top"/></a>'
+                cell_html = f'<a href="{issue_url}"><img src="{raw_asset_base}/hidden.svg" width="32" height="32" align="top"/></a>'
             elif state == "flagged":
-                cell_html = '<img src="assets/tiles/flag.svg" width="32" height="32" align="top"/>'
+                cell_html = f'<img src="{raw_asset_base}/flag.svg" width="32" height="32" align="top"/>'
             elif state == "revealed":
                 if cell.get("is_mine"):
-                    cell_html = '<img src="assets/tiles/mine.svg" width="32" height="32" align="top"/>'
+                    cell_html = f'<img src="{raw_asset_base}/mine.svg" width="32" height="32" align="top"/>'
                 else:
                     val = cell.get("neighbor_mines", 0)
                     color = cell.get("owner_color")
-                    tile_name = f"{color}_{val}" if color and os.path.exists(f"assets/tiles/{color}_{val}.svg") else f"num_{val}"
-                    cell_html = f'<img src="assets/tiles/{tile_name}.svg" width="32" height="32" align="top"/>'
+                    tile_name = f"{color}_{val}" if color else f"num_{val}"
+                    cell_html = f'<img src="{raw_asset_base}/{tile_name}.svg" width="32" height="32" align="top"/>'
 
             lines.append(f'    <td width="32" height="32" align="center" valign="middle">{cell_html}</td>')
         lines.append('  </tr>')
@@ -111,7 +114,6 @@ def process_move(issue_title, repository, actor=None):
                         player["score"] += 1
                         game["log"].append(f"🎯 {player['name']} revealed safe tile ({x}, {y})! (+1 point)")
 
-                    # Move to next player
                     active_remaining = get_active_players(game)
                     if active_remaining:
                         game["current_player_idx"] = (p_idx + 1) % len(active_remaining)

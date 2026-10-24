@@ -22,15 +22,16 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Process Move or Reset
+      - name: Generate Tile Assets & Process Turn
         run: |
+          python scripts/generate_assets.py
           python scripts/engine.py "${{ github.event.issue.title }}" "${{ github.repository }}" "${{ github.actor }}"
 
       - name: Commit and Push Changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add README.md state/game.json
+          git add README.md state/game.json assets/
           git commit -m "Process turn: ${{ github.event.issue.title }}" || exit 0
           git push
 
