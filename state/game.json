@@ -2,7 +2,7 @@
   "width": 10,
   "height": 10,
   "num_mines": 15,
-  "current_player_idx": 1,
+  "current_player_idx": 0,
   "players": [
     {
       "name": "@arjunagarwal1311-del",
@@ -15,21 +15,21 @@
       "name": "@verifiedzombie",
       "type": "human",
       "color": "red",
-      "score": 1,
+      "score": 2,
       "status": "active"
     },
     {
       "name": "@BotAlpha",
       "type": "bot",
       "color": "green",
-      "score": 1,
+      "score": 2,
       "status": "active"
     },
     {
       "name": "@BotBeta",
       "type": "bot",
       "color": "purple",
-      "score": 44,
+      "score": 45,
       "status": "active"
     }
   ],
@@ -553,10 +553,10 @@
         "x": 6,
         "y": 5,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
+        "state": "revealed",
+        "owner": "@BotBeta",
+        "owner_color": "purple",
+        "neighbor_mines": 2
       },
       {
         "x": 7,
@@ -580,10 +580,10 @@
         "x": 9,
         "y": 5,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
+        "state": "revealed",
+        "owner": "@BotAlpha",
+        "owner_color": "green",
+        "neighbor_mines": 2
       }
     ],
     [
@@ -654,10 +654,10 @@
         "x": 7,
         "y": 6,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
+        "state": "revealed",
+        "owner": "@verifiedzombie",
+        "owner_color": "red",
+        "neighbor_mines": 1
       },
       {
         "x": 8,
@@ -963,6 +963,9 @@
     "\u26cf\ufe0f @BotAlpha revealed (8, 9) and claimed 1 blocks!",
     "\u26cf\ufe0f @BotBeta revealed (3, 5) and claimed 44 blocks!",
     "\u26a0\ufe0f Ignored move from verifiedzombie: Not their turn.",
-    "\u26cf\ufe0f @arjunagarwal1311-del revealed (9, 8) and claimed 5 blocks!"
+    "\u26cf\ufe0f @arjunagarwal1311-del revealed (9, 8) and claimed 5 blocks!",
+    "\u26cf\ufe0f @verifiedzombie revealed (7, 6) and claimed 1 blocks!",
+    "\u26cf\ufe0f @BotAlpha revealed (9, 5) and claimed 1 blocks!",
+    "\u26cf\ufe0f @BotBeta revealed (6, 5) and claimed 1 blocks!"
   ]
 }
