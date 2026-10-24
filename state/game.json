@@ -38,7 +38,7 @@
       {
         "x": 0,
         "y": 0,
-        "is_mine": true,
+        "is_mine": false,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
@@ -51,7 +51,7 @@
         "state": "hidden",
         "owner": null,
         "owner_color": null,
-        "neighbor_mines": 2
+        "neighbor_mines": 0
       },
       {
         "x": 2,
@@ -60,7 +60,7 @@
         "state": "hidden",
         "owner": null,
         "owner_color": null,
-        "neighbor_mines": 0
+        "neighbor_mines": 1
       },
       {
         "x": 3,
@@ -69,7 +69,7 @@
         "state": "hidden",
         "owner": null,
         "owner_color": null,
-        "neighbor_mines": 0
+        "neighbor_mines": 1
       },
       {
         "x": 4,
@@ -78,7 +78,7 @@
         "state": "hidden",
         "owner": null,
         "owner_color": null,
-        "neighbor_mines": 0
+        "neighbor_mines": 2
       },
       {
         "x": 5,
@@ -87,7 +87,7 @@
         "state": "hidden",
         "owner": null,
         "owner_color": null,
-        "neighbor_mines": 0
+        "neighbor_mines": 1
       },
       {
         "x": 6,
@@ -96,7 +96,7 @@
         "state": "hidden",
         "owner": null,
         "owner_color": null,
-        "neighbor_mines": 0
+        "neighbor_mines": 1
       },
       {
         "x": 7,
@@ -130,11 +130,11 @@
       {
         "x": 0,
         "y": 1,
-        "is_mine": true,
+        "is_mine": false,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
-        "neighbor_mines": 0
+        "neighbor_mines": 1
       },
       {
         "x": 1,
@@ -143,7 +143,7 @@
         "state": "hidden",
         "owner": null,
         "owner_color": null,
-        "neighbor_mines": 2
+        "neighbor_mines": 1
       },
       {
         "x": 2,
@@ -152,12 +152,12 @@
         "state": "hidden",
         "owner": null,
         "owner_color": null,
-        "neighbor_mines": 0
+        "neighbor_mines": 3
       },
       {
         "x": 3,
         "y": 1,
-        "is_mine": false,
+        "is_mine": true,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
@@ -170,16 +170,16 @@
         "state": "hidden",
         "owner": null,
         "owner_color": null,
-        "neighbor_mines": 1
+        "neighbor_mines": 3
       },
       {
         "x": 5,
         "y": 1,
-        "is_mine": false,
+        "is_mine": true,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
-        "neighbor_mines": 1
+        "neighbor_mines": 0
       },
       {
         "x": 6,
@@ -221,60 +221,6 @@
     [
       {
         "x": 0,
-        "y": 2,
-        "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 1
-      },
-      {
-        "x": 1,
-        "y": 2,
-        "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 1
-      },
-      {
-        "x": 2,
-        "y": 2,
-        "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
-      },
-      {
-        "x": 3,
-        "y": 2,
-        "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
-      },
-      {
-        "x": 4,
-        "y": 2,
-        "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 2
-      },
-      {
-        "x": 5,
-        "y": 2,
-        "is_mine": true,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
-      },
-      {
-        "x": 6,
         "y": 2,
         "is_mine": false,
         "state": "hidden",
@@ -283,82 +229,8 @@
         "neighbor_mines": 3
       },
       {
-        "x": 7,
-        "y": 2,
-        "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 1
-      },
-      {
-        "x": 8,
-        "y": 2,
-        "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 2
-      },
-      {
-        "x": 9,
-        "y": 2,
-        "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 1
-      }
-    ],
-    [
-      {
-        "x": 0,
-        "y": 3,
-        "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
-      },
-      {
         "x": 1,
-        "y": 3,
-        "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
-      },
-      {
-        "x": 2,
-        "y": 3,
-        "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
-      },
-      {
-        "x": 3,
-        "y": 3,
-        "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
-      },
-      {
-        "x": 4,
-        "y": 3,
-        "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 2
-      },
-      {
-        "x": 5,
-        "y": 3,
+        "y": 2,
         "is_mine": true,
         "state": "hidden",
         "owner": null,
@@ -366,100 +238,8 @@
         "neighbor_mines": 0
       },
       {
-        "x": 6,
-        "y": 3,
-        "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 3
-      },
-      {
-        "x": 7,
-        "y": 3,
-        "is_mine": true,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
-      },
-      {
-        "x": 8,
-        "y": 3,
-        "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 1
-      },
-      {
-        "x": 9,
-        "y": 3,
-        "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
-      }
-    ],
-    [
-      {
-        "x": 0,
-        "y": 4,
-        "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
-      },
-      {
-        "x": 1,
-        "y": 4,
-        "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
-      },
-      {
         "x": 2,
-        "y": 4,
-        "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
-      },
-      {
-        "x": 3,
-        "y": 4,
-        "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
-      },
-      {
-        "x": 4,
-        "y": 4,
-        "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 2
-      },
-      {
-        "x": 5,
-        "y": 4,
-        "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 2
-      },
-      {
-        "x": 6,
-        "y": 4,
+        "y": 2,
         "is_mine": false,
         "state": "hidden",
         "owner": null,
@@ -467,13 +247,233 @@
         "neighbor_mines": 4
       },
       {
+        "x": 3,
+        "y": 2,
+        "is_mine": true,
+        "state": "hidden",
+        "owner": null,
+        "owner_color": null,
+        "neighbor_mines": 0
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "is_mine": false,
+        "state": "hidden",
+        "owner": null,
+        "owner_color": null,
+        "neighbor_mines": 3
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "is_mine": false,
+        "state": "hidden",
+        "owner": null,
+        "owner_color": null,
+        "neighbor_mines": 1
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "is_mine": false,
+        "state": "hidden",
+        "owner": null,
+        "owner_color": null,
+        "neighbor_mines": 1
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "is_mine": false,
+        "state": "hidden",
+        "owner": null,
+        "owner_color": null,
+        "neighbor_mines": 0
+      },
+      {
+        "x": 8,
+        "y": 2,
+        "is_mine": false,
+        "state": "hidden",
+        "owner": null,
+        "owner_color": null,
+        "neighbor_mines": 1
+      },
+      {
+        "x": 9,
+        "y": 2,
+        "is_mine": false,
+        "state": "hidden",
+        "owner": null,
+        "owner_color": null,
+        "neighbor_mines": 1
+      }
+    ],
+    [
+      {
+        "x": 0,
+        "y": 3,
+        "is_mine": true,
+        "state": "hidden",
+        "owner": null,
+        "owner_color": null,
+        "neighbor_mines": 0
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "is_mine": true,
+        "state": "hidden",
+        "owner": null,
+        "owner_color": null,
+        "neighbor_mines": 0
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "is_mine": false,
+        "state": "hidden",
+        "owner": null,
+        "owner_color": null,
+        "neighbor_mines": 3
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "is_mine": false,
+        "state": "hidden",
+        "owner": null,
+        "owner_color": null,
+        "neighbor_mines": 1
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "is_mine": false,
+        "state": "hidden",
+        "owner": null,
+        "owner_color": null,
+        "neighbor_mines": 1
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "is_mine": false,
+        "state": "hidden",
+        "owner": null,
+        "owner_color": null,
+        "neighbor_mines": 0
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "is_mine": false,
+        "state": "hidden",
+        "owner": null,
+        "owner_color": null,
+        "neighbor_mines": 0
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "is_mine": false,
+        "state": "hidden",
+        "owner": null,
+        "owner_color": null,
+        "neighbor_mines": 0
+      },
+      {
+        "x": 8,
+        "y": 3,
+        "is_mine": false,
+        "state": "hidden",
+        "owner": null,
+        "owner_color": null,
+        "neighbor_mines": 0
+      },
+      {
+        "x": 9,
+        "y": 3,
+        "is_mine": false,
+        "state": "hidden",
+        "owner": null,
+        "owner_color": null,
+        "neighbor_mines": 0
+      }
+    ],
+    [
+      {
+        "x": 0,
+        "y": 4,
+        "is_mine": false,
+        "state": "hidden",
+        "owner": null,
+        "owner_color": null,
+        "neighbor_mines": 2
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "is_mine": false,
+        "state": "hidden",
+        "owner": null,
+        "owner_color": null,
+        "neighbor_mines": 2
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "is_mine": false,
+        "state": "hidden",
+        "owner": null,
+        "owner_color": null,
+        "neighbor_mines": 1
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "is_mine": false,
+        "state": "hidden",
+        "owner": null,
+        "owner_color": null,
+        "neighbor_mines": 0
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "is_mine": false,
+        "state": "hidden",
+        "owner": null,
+        "owner_color": null,
+        "neighbor_mines": 0
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "is_mine": false,
+        "state": "hidden",
+        "owner": null,
+        "owner_color": null,
+        "neighbor_mines": 0
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "is_mine": false,
+        "state": "hidden",
+        "owner": null,
+        "owner_color": null,
+        "neighbor_mines": 0
+      },
+      {
         "x": 7,
         "y": 4,
         "is_mine": false,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
-        "neighbor_mines": 3
+        "neighbor_mines": 1
       },
       {
         "x": 8,
@@ -482,7 +482,7 @@
         "state": "hidden",
         "owner": null,
         "owner_color": null,
-        "neighbor_mines": 3
+        "neighbor_mines": 2
       },
       {
         "x": 9,
@@ -491,7 +491,7 @@
         "state": "hidden",
         "owner": null,
         "owner_color": null,
-        "neighbor_mines": 1
+        "neighbor_mines": 2
       }
     ],
     [
@@ -520,7 +520,7 @@
         "state": "hidden",
         "owner": null,
         "owner_color": null,
-        "neighbor_mines": 1
+        "neighbor_mines": 0
       },
       {
         "x": 3,
@@ -538,16 +538,16 @@
         "state": "hidden",
         "owner": null,
         "owner_color": null,
-        "neighbor_mines": 2
+        "neighbor_mines": 1
       },
       {
         "x": 5,
         "y": 5,
-        "is_mine": true,
+        "is_mine": false,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
-        "neighbor_mines": 0
+        "neighbor_mines": 1
       },
       {
         "x": 6,
@@ -556,16 +556,16 @@
         "state": "hidden",
         "owner": null,
         "owner_color": null,
-        "neighbor_mines": 2
+        "neighbor_mines": 0
       },
       {
         "x": 7,
         "y": 5,
-        "is_mine": true,
+        "is_mine": false,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
-        "neighbor_mines": 0
+        "neighbor_mines": 1
       },
       {
         "x": 8,
@@ -579,11 +579,11 @@
       {
         "x": 9,
         "y": 5,
-        "is_mine": false,
+        "is_mine": true,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
-        "neighbor_mines": 1
+        "neighbor_mines": 0
       }
     ],
     [
@@ -612,10 +612,19 @@
         "state": "hidden",
         "owner": null,
         "owner_color": null,
-        "neighbor_mines": 2
+        "neighbor_mines": 0
       },
       {
         "x": 3,
+        "y": 6,
+        "is_mine": false,
+        "state": "hidden",
+        "owner": null,
+        "owner_color": null,
+        "neighbor_mines": 1
+      },
+      {
+        "x": 4,
         "y": 6,
         "is_mine": true,
         "state": "hidden",
@@ -624,16 +633,34 @@
         "neighbor_mines": 0
       },
       {
-        "x": 4,
+        "x": 5,
         "y": 6,
         "is_mine": false,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
-        "neighbor_mines": 4
+        "neighbor_mines": 1
       },
       {
-        "x": 5,
+        "x": 6,
+        "y": 6,
+        "is_mine": false,
+        "state": "hidden",
+        "owner": null,
+        "owner_color": null,
+        "neighbor_mines": 0
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "is_mine": false,
+        "state": "hidden",
+        "owner": null,
+        "owner_color": null,
+        "neighbor_mines": 1
+      },
+      {
+        "x": 8,
         "y": 6,
         "is_mine": false,
         "state": "hidden",
@@ -642,40 +669,13 @@
         "neighbor_mines": 3
       },
       {
-        "x": 6,
-        "y": 6,
-        "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 4
-      },
-      {
-        "x": 7,
-        "y": 6,
-        "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 3
-      },
-      {
-        "x": 8,
-        "y": 6,
-        "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 2
-      },
-      {
         "x": 9,
         "y": 6,
-        "is_mine": false,
+        "is_mine": true,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
-        "neighbor_mines": 1
+        "neighbor_mines": 0
       }
     ],
     [
@@ -704,16 +704,16 @@
         "state": "hidden",
         "owner": null,
         "owner_color": null,
-        "neighbor_mines": 2
+        "neighbor_mines": 0
       },
       {
         "x": 3,
         "y": 7,
-        "is_mine": true,
+        "is_mine": false,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
-        "neighbor_mines": 0
+        "neighbor_mines": 2
       },
       {
         "x": 4,
@@ -722,21 +722,21 @@
         "state": "hidden",
         "owner": null,
         "owner_color": null,
-        "neighbor_mines": 3
+        "neighbor_mines": 2
       },
       {
         "x": 5,
         "y": 7,
-        "is_mine": true,
+        "is_mine": false,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
-        "neighbor_mines": 0
+        "neighbor_mines": 2
       },
       {
         "x": 6,
         "y": 7,
-        "is_mine": true,
+        "is_mine": false,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
@@ -749,7 +749,7 @@
         "state": "hidden",
         "owner": null,
         "owner_color": null,
-        "neighbor_mines": 1
+        "neighbor_mines": 0
       },
       {
         "x": 8,
@@ -796,7 +796,7 @@
         "state": "hidden",
         "owner": null,
         "owner_color": null,
-        "neighbor_mines": 2
+        "neighbor_mines": 1
       },
       {
         "x": 3,
@@ -810,11 +810,11 @@
       {
         "x": 4,
         "y": 8,
-        "is_mine": false,
+        "is_mine": true,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
-        "neighbor_mines": 2
+        "neighbor_mines": 0
       },
       {
         "x": 5,
@@ -832,7 +832,7 @@
         "state": "hidden",
         "owner": null,
         "owner_color": null,
-        "neighbor_mines": 2
+        "neighbor_mines": 1
       },
       {
         "x": 7,
@@ -855,11 +855,11 @@
       {
         "x": 9,
         "y": 8,
-        "is_mine": true,
+        "is_mine": false,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
-        "neighbor_mines": 0
+        "neighbor_mines": 1
       }
     ],
     [
@@ -897,7 +897,7 @@
         "state": "hidden",
         "owner": null,
         "owner_color": null,
-        "neighbor_mines": 0
+        "neighbor_mines": 1
       },
       {
         "x": 4,
@@ -906,12 +906,12 @@
         "state": "hidden",
         "owner": null,
         "owner_color": null,
-        "neighbor_mines": 0
+        "neighbor_mines": 2
       },
       {
         "x": 5,
         "y": 9,
-        "is_mine": false,
+        "is_mine": true,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
@@ -924,7 +924,7 @@
         "state": "hidden",
         "owner": null,
         "owner_color": null,
-        "neighbor_mines": 0
+        "neighbor_mines": 1
       },
       {
         "x": 7,
@@ -933,16 +933,16 @@
         "state": "hidden",
         "owner": null,
         "owner_color": null,
-        "neighbor_mines": 0
+        "neighbor_mines": 1
       },
       {
         "x": 8,
         "y": 9,
-        "is_mine": false,
+        "is_mine": true,
         "state": "hidden",
         "owner": null,
         "owner_color": null,
-        "neighbor_mines": 1
+        "neighbor_mines": 0
       },
       {
         "x": 9,
