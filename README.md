@@ -29,8 +29,8 @@ Click any hidden cell below to issue a move automatically:
 
 
 ### 📜 Recent Moves Log
-- ⚠️ Ignored move from arjunagarwal1311-del: Not their turn.
 - ⛏️ @arjunagarwal1311-del revealed (8, 5) and claimed 1 blocks!
 - ⛏️ @verifiedzombie revealed (1, 6) and claimed 1 blocks!
 - ⛏️ @BotAlpha revealed (8, 9) and claimed 1 blocks!
 - ⛏️ @BotBeta revealed (3, 5) and claimed 44 blocks!
+- ⚠️ Ignored move from verifiedzombie: Not their turn.
