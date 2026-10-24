@@ -2,13 +2,13 @@
   "width": 10,
   "height": 10,
   "num_mines": 15,
-  "current_player_idx": 0,
+  "current_player_idx": 1,
   "players": [
     {
       "name": "@arjunagarwal1311-del",
       "type": "human",
       "color": "blue",
-      "score": 0,
+      "score": 1,
       "status": "active"
     },
     {
@@ -571,10 +571,10 @@
         "x": 8,
         "y": 5,
         "is_mine": false,
-        "state": "hidden",
-        "owner": null,
-        "owner_color": null,
-        "neighbor_mines": 0
+        "state": "revealed",
+        "owner": "@arjunagarwal1311-del",
+        "owner_color": "blue",
+        "neighbor_mines": 2
       },
       {
         "x": 9,
@@ -957,6 +957,7 @@
   ],
   "log": [
     "\ud83c\udfae Game initialized! @user1's turn to move.",
-    "\u26a0\ufe0f Ignored move from arjunagarwal1311-del: Not their turn."
+    "\u26a0\ufe0f Ignored move from arjunagarwal1311-del: Not their turn.",
+    "\u26cf\ufe0f @arjunagarwal1311-del revealed (8, 5) and claimed 1 blocks!"
   ]
 }
