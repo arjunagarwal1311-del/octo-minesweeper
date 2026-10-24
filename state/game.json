@@ -1,0 +1,62 @@
+{
+  "width": 10,
+  "height": 10,
+  "num_mines": 15,
+  "current_player_idx": 0,
+  "players": [
+    {
+      "name": "@user1",
+      "type": "human",
+      "color": "blue",
+      "score": 12,
+      "status": "active"
+    },
+    {
+      "name": "@user2",
+      "type": "human",
+      "color": "red",
+      "score": 0,
+      "status": "active"
+    },
+    {
+      "name": "@BotAlpha",
+      "type": "bot",
+      "color": "green",
+      "score": 0,
+      "status": "active"
+    },
+    {
+      "name": "@BotBeta",
+      "type": "bot",
+      "color": "purple",
+      "score": 0,
+      "status": "eliminated"
+    }
+  ],
+  "grid": [
+    [
+      {
+        "x": 0,
+        "y": 0,
+        "is_mine": false,
+        "state": "revealed",
+        "owner": "@user1",
+        "owner_color": "blue",
+        "neighbor_mines": 1
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "is_mine": true,
+        "state": "hidden",
+        "owner": null,
+        "owner_color": null,
+        "neighbor_mines": 0
+      }
+    ]
+  ],
+  "log": [
+    "🎮 Game initialized! @user1's turn to move.",
+    "⛏️ @user1 revealed (0, 0) and claimed 12 blocks!"
+  ]
+}

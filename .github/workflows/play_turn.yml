@@ -1,0 +1,55 @@
+name: Minesweeper Engine
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  process-turn:
+    if: startsWith(github.event.issue.title, 'move:')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Execute Game Move
+        env:
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          python scripts/engine.py "$ISSUE_TITLE" "$ISSUE_AUTHOR" "$REPOSITORY"
+
+      - name: Commit Game State & README
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md state/game.json
+          git diff --staged --quiet || git commit -m "Game turn processed from Issue #${{ github.event.issue.number }}"
+          git push
+
+      - name: Auto-close Issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: '✅ Move processed! Board updated on the main page.'
+            });
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              state: 'closed'
+            });
