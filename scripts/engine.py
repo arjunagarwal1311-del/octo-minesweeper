@@ -149,32 +149,40 @@ def render_readme(game, repository):
         lines.append(f"| {p['name']} | {p['type'].upper()} | {color_square} {p['color']} | {p['score']} | {status_icon} |")
     lines.append("\n")
 
-    lines.append("### 🗺️ Dynamic Grid (Click cell to Reveal)")
-    lines.append("Click any hidden cell below to issue a move automatically:\n")
+    lines.append("### 🗺️ Dynamic Grid (Click tile to Reveal)")
+    lines.append("<sub>Click any hidden tile to submit your move instantly via GitHub Issues:</sub>\n")
 
-    table = []
+    # Render HTML grid using SVG image sprites
+    lines.append('<table>')
     for y in range(game["height"]):
-        row = []
+        lines.append('  <tr>')
         for x in range(game["width"]):
             cell = game["grid"][y][x]
             state = cell["state"]
             
             if state == "hidden":
                 issue_url = f"https://github.com/{repository}/issues/new?title=move:reveal:{x}:{y}&body=Click+Submit+New+Issue+to+confirm+turn."
-                cell_str = f"[{EMOJIS['hidden']}]({issue_url})"
+                tile_img = f'<img src="assets/tiles/hidden.svg" width="34" height="34" alt="hidden"/>'
+                cell_html = f'<a href="{issue_url}">{tile_img}</a>'
             elif state == "flagged":
-                cell_str = EMOJIS["flagged"]
+                cell_html = '<img src="assets/tiles/flag.svg" width="34" height="34" alt="flag"/>'
             elif state == "revealed":
                 if cell["is_mine"]:
-                    cell_str = EMOJIS["mine"]
+                    cell_html = '<img src="assets/tiles/mine.svg" width="34" height="34" alt="mine"/>'
                 else:
                     val = cell["neighbor_mines"]
-                    cell_str = EMOJIS["numbers"][val] if val < len(EMOJIS["numbers"]) else str(val)
-            row.append(cell_str)
-        table.append("| " + " | ".join(row) + " |")
+                    color = cell.get("owner_color")
+                    if color and f"{color}_{val}" in os.listdir("assets/tiles") if os.path.exists("assets/tiles") else False:
+                        tile_name = f"{color}_{val}"
+                    else:
+                        tile_name = f"num_{val}"
+                    cell_html = f'<img src="assets/tiles/{tile_name}.svg" width="34" height="34" alt="{val}"/>'
 
-    lines.append("\n".join(table))
-    lines.append("\n\n### 📜 Recent Moves Log")
+            lines.append(f'    <td align="center" width="36" height="36" padding="0">{cell_html}</td>')
+        lines.append('  </tr>')
+    lines.append('</table>')
+
+    lines.append("\n### 📜 Recent Moves Log")
     for log_item in game["log"][-5:]:
         lines.append(f"- {log_item}")
 
