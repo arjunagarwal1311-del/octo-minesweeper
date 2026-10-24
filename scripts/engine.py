@@ -109,32 +109,81 @@ def generate_isometric_board_svg(game, repository):
     with open(BOARD_SVG_FILE, "w", encoding="utf-8") as f:
         f.write("\n".join(svg_content))
 
-def render_readme(game, repository):
-    generate_isometric_board_svg(game, repository)
-    
-    lines = []
-    lines.append(f"# ⚔️ Git Mine Empires: Battlegrounds (Isometric 3D)\n")
-    
-    active_player = game["players"][game["current_player_idx"] % len(game["players"])]
-    reset_url = f"https://github.com/{repository}/issues/new?title=reset&amp;body=Click+Submit+New+Issue+to+reset+the+game+board."
-    
-    lines.append(f"> ⏱️ Current Turn: **{active_player['name']}** | [🔄 **Reset Board**]({reset_url})\n")
+import os
 
-    lines.append("### 🏆 Empire Territories")
-    lines.append("| Player | Type | Empire Color | Territory Size | Status |")
+README_FILE = "README.md"
+
+def get_active_player(game):
+    active = [p for p in game["players"] if p.get("status") == "active"]
+    if not active:
+        return None
+    return active[game["current_player_idx"] % len(active)]
+
+def render_readme(game, repository):
+    """
+    Renders README.md with an interactive HTML tile grid where each cell
+    links directly to a GitHub Issue creation URL. Completely removes monolithic board.svg.
+    """
+    lines = []
+    
+    # 1. Header & Reset Action
+    lines.append("# ⚔️ Git Mine Empires: Battlegrounds (3D Retro)\n")
+    
+    active_player = get_active_player(game)
+    turn_str = f"Current Turn: **{active_player['name']}**" if active_player else "**GAME OVER**"
+    reset_url = f"https://github.com/{repository}/issues/new?title=reset&body=Click+Submit+New+Issue+to+reset+the+game+board."
+    
+    lines.append(f"> ⏱️ {turn_str} | [🔄 **Reset Board**]({reset_url})\n")
+
+    # 2. Leaderboard
+    lines.append("### 🏆 Empire Leaderboard")
+    lines.append("| Player | Type | Color | Territory Size | Status |")
     lines.append("| :--- | :--- | :--- | :--- | :--- |")
     for p in game["players"]:
-        status_icon = "🟢 Active" if p["status"] == "active" else "💀 Eliminated"
+        status_icon = "🟢 Active" if p.get("status") == "active" else "💀 Eliminated"
         lines.append(f"| {p['name']} | {p['type'].upper()} | `{p['color']}` | {p['score']} Blocks | {status_icon} |")
     lines.append("\n")
 
-    lines.append("### 🗺️ Isometric Battleground (Click tile to Conquer)")
-    lines.append("![Isometric Board](assets/board.svg)\n")
+    # 3. Interactive Tile Grid
+    lines.append("### 🗺️ Dynamic Battleground (Click tile to Conquer)")
+    lines.append("<sub>Click any 3D tile to submit your turn via GitHub Issues:</sub>\n")
 
-    lines.append("### 📜 Recent Conquest Log")
+    lines.append('<table border="0" cellspacing="0" cellpadding="0">')
+    for y in range(game["height"]):
+        lines.append('  <tr>')
+        for x in range(game["width"]):
+            cell = game["grid"][y][x]
+            state = cell["state"]
+            
+            if state == "hidden":
+                issue_url = f"https://github.com/{repository}/issues/new?title=move:reveal:{x}:{y}&body=Click+Submit+New+Issue+to+confirm+turn."
+                cell_html = f'<a href="{issue_url}"><img src="assets/tiles/hidden.svg" width="34" height="34" align="top" alt="tile"/></a>'
+            elif state == "flagged":
+                cell_html = '<img src="assets/tiles/flag.svg" width="34" height="34" align="top" alt="flag"/>'
+            elif state == "revealed":
+                if cell.get("is_mine"):
+                    cell_html = '<img src="assets/tiles/mine.svg" width="34" height="34" align="top" alt="mine"/>'
+                else:
+                    val = cell.get("neighbor_mines", 0)
+                    color = cell.get("owner_color")
+                    
+                    # Choose player-tinted tile if available, otherwise fall back to standard number tile
+                    tile_name = f"{color}_{val}" if color else f"num_{val}"
+                    if not os.path.exists(f"assets/tiles/{tile_name}.svg"):
+                        tile_name = f"num_{val}"
+                        
+                    cell_html = f'<img src="assets/tiles/{tile_name}.svg" width="34" height="34" align="top" alt="{val}"/>'
+
+            lines.append(f'    <td width="34" height="34" align="center" valign="middle">{cell_html}</td>')
+        lines.append('  </tr>')
+    lines.append('</table>')
+
+    # 4. Recent Moves Log
+    lines.append("\n### 📜 Recent Moves Log")
     for log_item in game["log"][-5:]:
         lines.append(f"- {log_item}")
 
+    # Write output directly to README.md
     with open(README_FILE, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
 
